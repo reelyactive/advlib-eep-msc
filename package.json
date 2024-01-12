@@ -1,0 +1,39 @@
+{
+  "name": "advlib-eep-msc",
+  "homepage": "https://github.com/reelyactive/advlib-eep-msc/",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Wireless advertising packet decoding library for EnOcean Equipment Profile MSC telegrams.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "advlib",
+    "EnOcean",
+    "EEP",
+    "MSC",
+    "payload processor",
+    "library"
+  ],
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "./lib/advlibeepmsc.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/advlib-eep-msc.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^6.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/reelyactive/advlib-eep-msc/issues"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}
