@@ -3,6 +3,8 @@ advlib-eep-msc
 
 Wireless advertising packet decoding library for EnOcean Equipment Profiles of manufacturer specific communication data (MSC).  __advlib-eep-msc__ is typically used as a library for [advlib-esp](https://github.com/reelyactive/advlib-esp) which itself is commonly a processor module of the protocol-agnostic [advlib](https://github.com/reelyactive/advlib).
 
+![Overview of advlib-eep-msc](https://reelyactive.github.io/advlib-eep-msc/images/overview.png)
+
 __advlib-eep-msc__ is a lightweight [Node.js package](https://www.npmjs.com/package/advlib-eep-msc) with no dependencies.  See also its sister libraries [advlib-eep-4bs](https://github.com/reelyactive/advlib-eep-4bs), [advlib-eep-vld](https://github.com/reelyactive/advlib-eep-vld) and [advlib-eep-rps](https://github.com/reelyactive/advlib-eep-rps).
 
 
