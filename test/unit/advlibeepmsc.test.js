@@ -26,8 +26,8 @@ const EXPECTED_DATA_047_PEOPLE_COUNTER = {
 };
 const EXPECTED_DATA_047_CO2_SENSOR = {
     batteryVoltage: 3.04,
-    carbonDioxideConcentration: 718,
-    relativeHumidity: 32.5,
+    carbonDioxideConcentration: 804,
+    relativeHumidity: 34.5,
     temperature: 21.6,
     uri: "https://sniffypedia.org/Organization/DEUTA_Controls_GmbH/"
 };
@@ -56,8 +56,8 @@ describe('advlib-eep-msc', function() {
                                          EXPECTED_DATA_047_PEOPLE_COUNTER);
   });
 
-  // Test the process function with valid Deuta Controls CO2 data
-  it('should handle valid Deuta Controls CO2 data as input', function() {
+  // Test the process function with valid Deuta Controls Solar CO2 data
+  it('should handle valid Deuta Controls Solar CO2 data as input', function() {
     assert.deepEqual(advlib.processMSCTelegram(
                                              INPUT_DATA_047_CO2_SENSOR_EEP_TYPE,
                                              INPUT_DATA_047_CO2_SENSOR),

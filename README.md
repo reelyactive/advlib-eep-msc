@@ -45,6 +45,7 @@ The following EEPs are currently supported by __advlib-eep-msc__.
 | Mfr. Id | EEP      | Profile Name                 | /lib file               |
 |:--------|:---------|:-----------------------------|:------------------------|
 | 0x047   | D1-07-10 | People Counter               | deutacontrols.js        |
+| 0x047   | D1-09-01 | Solar CO2 Sensor             | deutacontrols.js        |
 
 See [www.reelyactive.com/pareto/anywhere/devices/enocean-alliance/](https://www.reelyactive.com/pareto/anywhere/devices/enocean-alliance/) for a list of all EEPs supported by our [Pareto Anywhere](https://www.reelyactive.com/pareto/anywhere/) open source IoT middleware.
 
