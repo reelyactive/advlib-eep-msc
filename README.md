@@ -46,6 +46,8 @@ The following EEPs are currently supported by __advlib-eep-msc__.
 |:--------|:---------|:-----------------------------|:------------------------|
 | 0x047   | D1-07-10 | People Counter               | deutacontrols.js        |
 
+See [www.reelyactive.com/pareto/anywhere/devices/enocean-alliance/](https://www.reelyactive.com/pareto/anywhere/devices/enocean-alliance/) for a list of all EEPs supported by our [Pareto Anywhere](https://www.reelyactive.com/pareto/anywhere/) open source IoT middleware.
+
 
 Contributing
 ------------
