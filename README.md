@@ -19,7 +19,7 @@ Hello advlib-eep-msc!
 const advlib = require('advlib-eep-msc');
 
 let eepType = 'D1-07-10';
-let telegram = 'd1a500007b0414006980';
+let telegram = 'd10470a500007b0414006980';
 
 let processedData = advlib.processMSCTelegram(eepType, telegram);
 
@@ -30,7 +30,8 @@ Which should yield the following console output:
 
     {
         batteryVoltage: 3.3,
-        passageCounts: [ 123 ]
+        passageCounts: [ 123 ],
+        uri: "https://sniffypedia.org/Organization/DEUTA_Controls_GmbH/"
     }
 
 
@@ -39,9 +40,9 @@ Supported EnOcean Equipment Profiles
 
 The following EEPs are currently supported by __advlib-eep-msc__.
 
-| EEP      | Profile Name                           | /lib file               |
-|:---------|:---------------------------------------|:------------------------|
-| D1-07-10 | People Counter                         | deutacontrols.js        |
+| Mfr. Id | EEP      | Profile Name                 | /lib file               |
+|:--------|:---------|:-----------------------------|:------------------------|
+| 0x047   | D1-07-10 | People Counter               | deutacontrols.js        |
 
 
 Contributing
