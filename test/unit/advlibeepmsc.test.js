@@ -14,6 +14,8 @@ const INPUT_DATA_INVALID_HEX_STRING = 'xyz';
 const INPUT_DATA_TOO_SHORT_BUFFER = Buffer.from('', 'hex');
 const INPUT_DATA_047_PEOPLE_COUNTER_EEP_TYPE = 'D1-07-10';
 const INPUT_DATA_047_PEOPLE_COUNTER = 'd10470a500007b0414006980';
+const INPUT_DATA_047_NOISE_SENSOR_EEP_TYPE = 'D1-07-11';
+const INPUT_DATA_047_NOISE_SENSOR = 'd104704ab8ad9d0426b1cb80';
 const INPUT_DATA_047_CO2_SENSOR_EEP_TYPE = 'D1-09-01';
 const INPUT_DATA_047_CO2_SENSOR = 'd104700324456ca3729804274f7980'
 
@@ -22,6 +24,13 @@ const EXPECTED_DATA_INVALID_INPUT = null;
 const EXPECTED_DATA_047_PEOPLE_COUNTER = {
     batteryVoltage: 3.3,
     passageCounts: [ 123 ],
+    uri: "https://sniffypedia.org/Organization/DEUTA_Controls_GmbH/"
+};
+const EXPECTED_DATA_047_NOISE_SENSOR = {
+    batteryVoltage: 3.14,
+    capacitorVoltage: 3.68,
+    solarVoltage: 3.46,
+    soundLevel: 74,
     uri: "https://sniffypedia.org/Organization/DEUTA_Controls_GmbH/"
 };
 const EXPECTED_DATA_047_CO2_SENSOR = {
@@ -54,6 +63,15 @@ describe('advlib-eep-msc', function() {
                                          INPUT_DATA_047_PEOPLE_COUNTER_EEP_TYPE,
                                          INPUT_DATA_047_PEOPLE_COUNTER),
                                          EXPECTED_DATA_047_PEOPLE_COUNTER);
+  });
+
+  // Test the process function with valid Deuta Controls Noise Sensor data
+  it('should handle valid Deuta Controls noise sensor data as input',
+     function() {
+    assert.deepEqual(advlib.processMSCTelegram(
+                                           INPUT_DATA_047_NOISE_SENSOR_EEP_TYPE,
+                                           INPUT_DATA_047_NOISE_SENSOR),
+                                           EXPECTED_DATA_047_NOISE_SENSOR);
   });
 
   // Test the process function with valid Deuta Controls Solar CO2 data
