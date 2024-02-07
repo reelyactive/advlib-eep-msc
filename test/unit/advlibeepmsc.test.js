@@ -35,8 +35,10 @@ const EXPECTED_DATA_047_NOISE_SENSOR = {
 };
 const EXPECTED_DATA_047_CO2_SENSOR = {
     batteryVoltage: 3.04,
+    capacitorVoltage: 0.72,
     carbonDioxideConcentration: 804,
     relativeHumidity: 34.5,
+    solarVoltage: 1.38,
     temperature: 21.6,
     uri: "https://sniffypedia.org/Organization/DEUTA_Controls_GmbH/"
 };
