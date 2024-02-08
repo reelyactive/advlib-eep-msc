@@ -30,7 +30,7 @@ const EXPECTED_DATA_047_NOISE_SENSOR = {
     batteryVoltage: 3.14,
     capacitorVoltage: 3.68,
     solarVoltage: 3.46,
-    soundLevel: 74,
+    soundPressure: 74,
     uri: "https://sniffypedia.org/Organization/DEUTA_Controls_GmbH/"
 };
 const EXPECTED_DATA_047_CO2_SENSOR = {
